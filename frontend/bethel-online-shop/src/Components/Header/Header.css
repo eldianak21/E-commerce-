@@ -1,0 +1,84 @@
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #003333; /* Green header */
+    color: #fff; /* White text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+    color: #008000; /* Green logo text */
+  }
+  
+  .logo-image {
+    width: 60px;              /* Set the desired width */
+    height: auto;             /* Maintain aspect ratio */
+    max-height: 60px;        /* Optional: set a maximum height */
+    object-fit: contain;      /* Ensure the image fits within the dimensions */
+    border-radius: 10px;      /* Slightly rounded corners for a softer look */
+  }
+  
+  /* Navigation Styles */
+  .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navigation a {
+    color: #fff; /* White list items */
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .navigation a:hover {
+    color: #d4af37; /* Slightly golden on hover */
+    border-bottom: 2px solid #d4af37;
+  }
+  
+  .cart {
+    position: relative;
+    transition: color 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+  }
+  
+  .cart:hover {
+    color: #d4af37; /* Slightly golden on hover */
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5); /* Golden box shadow on hover */
+  }
+  
+  .cart-icon {
+    font-size: 24px;
+    color: #fff; /* White cart icon */
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navigation ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
